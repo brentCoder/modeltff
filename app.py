@@ -2,7 +2,7 @@ from flask import Flask
 
 app = Flask(__name__)
 
-@app.route('/test')
+@app.route('/test', method="GET")
 def index():
     return "hello there"
 
